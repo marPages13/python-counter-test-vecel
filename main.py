@@ -1,7 +1,9 @@
-from nicegui import ui
+from nicegui import app, ui
 
-app = ui()
+app = app()
 
-app.label('Hello NiceGUI!')
+app.on_startup(lambda: print('Visit your app on one of these URLs:', app.urls))
 
-app.run()
+ui.label('Hello NiceGUI!')
+
+ui.run()
