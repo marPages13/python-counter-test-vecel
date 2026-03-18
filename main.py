@@ -1,5 +1,6 @@
 from nicegui import ui
 
-ui.label('Hello NiceGUI!')
+if (__name__ == "__main__"):
+    ui.label('Hello NiceGUI!')
 
-ui.run()
+    ui.run()
